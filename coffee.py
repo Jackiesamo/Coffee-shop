@@ -1,2 +1,7 @@
 
-class Coffee
+class Coffee:
+    def __init__(self,name):
+        self.name =name
+
+        @property
+
