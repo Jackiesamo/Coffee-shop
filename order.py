@@ -9,7 +9,11 @@ class Order:
      Order.orders.append(self)
 
      @property
-     def customer(self)
+     def customer(self):
+        return self.__customer
+     
+     @customer .setter
+     def customer(self,customer):
 
 
     
