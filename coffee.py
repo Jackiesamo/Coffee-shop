@@ -13,6 +13,5 @@ class Coffee:
             print("Coffee name must be a string.")
          if len(value) < 3:
             raise TypeError("Coffee name must be at least 3 characters long")
-     
-        self ._coffee = value
+         self._name = value
 
