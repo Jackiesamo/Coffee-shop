@@ -1,5 +1,5 @@
 class Order:
-    #class variable to store all orders
+  #class variable to store all orders
     orders = []
 
     def __init__(self,customer,coffee,price):
@@ -16,20 +16,24 @@ class Order:
      
      @customer .setter
      def customer(self,value):
-        self ._customer = value
-        if not isinstance(value,customer):
-           print('customer must be an instance of customer class')
-        self ._customer = value
+        if not isinstance(value, str):
+            raise TypeError("customer must be a string")
+        if not (1 <= len(value) <= 15):
+            raise ValueError("customer name must be 1–15 characters long")
+        
+            self._customer
 
-        @property
-        def coffee(self):
+     @property
+     def coffee(self):
           return self ._coffee
      
-     @coffee .setter
-     def coffee(self,value):
-        self ._coffee = value
-        if not isinstance(value,coffee):
-           print('coffee must be an instance of coffee class')
+     @name.setter
+     def name(self, value):
+        if not isinstance(value, str):
+            print("Coffee name must be a string.")
+        if len(value) < 3:
+            raise TypeError("Coffee name must be at least 3 characters long")
+     
         self ._coffee = value
 
         @property
