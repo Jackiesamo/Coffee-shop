@@ -12,9 +12,9 @@ class Order:
 
      @property
      def customer(self):
-        return self ._customer
+        return self._customer
      
-     @customer .setter
+     @customer.setter
      def customer(self,value):
         if not isinstance(value, str):
             raise TypeError("customer must be a string")
@@ -25,7 +25,7 @@ class Order:
 
      @property
      def coffee(self):
-          return self ._coffee
+          return self._coffee
      
      @name.setter
      def name(self, value):
@@ -34,13 +34,13 @@ class Order:
         if len(value) < 3:
             raise TypeError("Coffee name must be at least 3 characters long")
      
-        self ._coffee = value
+        self._coffee = value
 
-        @property
-        def price(self):
-          return self ._price
+      @property
+      def price(self):
+         return self ._price
      
-     @price .setter
+     @price.setter
      def price(self,value):
         self ._price = value
         if not isinstance(value,float):
