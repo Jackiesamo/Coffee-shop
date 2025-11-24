@@ -1,3 +1,6 @@
+from customer import Customer
+from coffee import Coffee
+
 class Order:
   #class variable to store all orders
     orders = []
@@ -14,6 +17,7 @@ class Order:
      def customer(self):
         return self._customer
      
+     #
      @customer.setter
      def customer(self,value):
         if not isinstance(value, str):
@@ -36,8 +40,8 @@ class Order:
      
         self._coffee = value
 
-      @property
-      def price(self):
+        @property
+        def price(self):
          return self ._price
      
      @price.setter
